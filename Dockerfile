@@ -6,6 +6,6 @@ WORKDIR /LoginSystem
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY /LoginSystem .
+COPY /LoginSystem/* .
 #Run the application
 CMD [ "python", "app.py" ]
