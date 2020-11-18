@@ -1,7 +1,7 @@
 FROM python:3.10.0a2-buster
 
 #Make a directory 
-WORKDIR /app
+WORKDIR /
 
 #Install dependencies
 COPY requirements.txt .
