@@ -1,9 +1,9 @@
 FROM python:3.10.0a2-buster
 
-WORKDIR /home/ubuntu/LoginSystem
+WORKDIR /app
 
 #Install dependencies
-COPY requirements.txt .
+COPY . /app
 RUN pip install -r requirements.txt
 
 #Run the application
