@@ -11,4 +11,5 @@ COPY . /app
 EXPOSE 5000
 
 RUN make /app
-CMD python /app/app.py
+ENTRYPOINT ["python"]
+CMD ["app,py"]
