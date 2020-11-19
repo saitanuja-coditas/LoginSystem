@@ -8,7 +8,7 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
-EXPOSE 8080
+EXPOSE 5000
 
 RUN make /app
 CMD python /app/app.py
