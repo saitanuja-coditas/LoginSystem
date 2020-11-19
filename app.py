@@ -34,10 +34,6 @@ def before_request():
         user = [x for x in users if x.id == session['user_id']][0]
         g.user = user
 
-if __name__ == "__main__": 
-    app.run(host ='0.0.0.0', port = 5001, debug = True)  
-        
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -61,3 +57,7 @@ def profile():
         return redirect(url_for('login'))
 
     return render_template('profile.html')
+
+if __name__ == "__main__": 
+    app.run(host ='0.0.0.0', port = 5000, debug = True)  
+        
